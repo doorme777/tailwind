@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tailwind.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="lg:max-w-[72rem] lg:mr-auto lg:ml-auto font-Monserrat dark:bg-gray-700">
+    <header class="w-full h-[82vh] max-h-[528px]">
+      <nav class="w-full h-20 bg-white hidden md:flex md:items-center md:px-4 md:justify-between fixed z-[999] dark:bg-gray-800">
+        <div>
+          <p class="text-xl font-semibold text-primary dark:text-white">Platzi travel</p>
+        </div>
+        <div>
+          <ul class="flex text-lg text-primary list-none gap-x-8 dark:text-white">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rentas-recomendadas">Rentas</a></li>
+            <li><a href="#recomendadas">Recomendadas</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+
+        <div class="flex gap-x-4 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path class="fill-current text-primary dark:text-white" d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+
+          <button id="darkmode" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path class="fill-current text-primary " d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+
+          </button>
+
+
+        </div>
+
+      </nav>
+      <figure class="w-full h-full object-cover">
+        <img
+          class="opacity-90 w-[100vw] max-h-[578px] md:hidden"
+          src="assets/Convertido-sanFrancisco.jpg"
+          alt="San fransisco"
+        />
+
+        <img
+          class="w-full hidden max-h-[478px] md:block "
+          src="./assets/Convertido-sanFranciscoDesktop.jpg"
+          alt="san francisco desktop"
+        />
+      </figure>
+      <section
+        class="relative bottom-[480px] flex flex-col content-center items-center justify-between h-[60vh] md:content-start md:items-start md:ml-16 md:justify-center"
+      >
+        <h1 class="hidden md:block text-4xl font-bold text-black md:mb-8 ">
+          Find More Locations 
+        </br>like this
+        </h1>
+        <input
+          class="w-5/6 p-4 text-lx bg-white rounded-full shadow-sm transitio duration-300 focus-within:shadow-sm focus:ring-4 focus:w-11/12 md:hidden"
+          type="search"
+          name=""
+          id=""
+          placeholder="San fransico..."
+        />
+
+        <button
+          class="w-32 p-4 rounded-full bg-white text-primary text-lg font-semibold shadow-sm transitio duration-300 hover:bg-primary hover:text-white hover:scale-115"
+        >
+          Explorar
+        </button>
+      </section>
+    </header>
+    <main>
+      <section id="home">
+        <section id="recommendations" class="my-[4vh] py-[12px]">
+          <h2 class="mx-[2vh] text-primary text-3xl font-bold pt-[6vh] dark:text-white">
+            Recomendados
+          </h2>
+
+          <div
+            class="flex items-center gap-x-6 p-[2.8vh] w-auto h-72 mt-2 overflow-x-auto overflow-x-contain snap-x snap-mandatory"
+          >
+            <a class="card snap-end">
+              <img
+                alt="Norway"
+                src="./assets/Convertido-norway.jpg"
+                class="card--image"
+              />
+
+              <div class="card__text">
+                <p class="text--title">Norway</p>
+
+                <p class="text--normal">Vistas maravillosas</p>
+              </div>
+            </a>
+
+            <a class="card snap-end">
+              <img
+                alt="Developer"
+                src="./assets/Convertido-new_york.jpg"
+                class="card--image"
+              />
+
+              <div class="card__text">
+                <p class="text--title">New york</p>
+
+                <p class="text--normal">Donde suceden maravillas</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <section id="rentas-recomendadas">
+        <h2 class="mx-[2vh] text-primary text-3xl font-bold dark:text-white">
+          Rentas recomendadas
+        </h2>
+
+        
+      </section>
+      <section id="recomendadas" class="flex flex-col items-center my-4">
+        <article class="h-[60vh] w-[78vw] rounded-[20px] md:w-[97vw] lg:w-full mb-4">
+          <img
+            class="w-full  object-cover rounded-[20px] opacity-80 md:max-h-[320px] md:w-[100vw]"
+            src="./assets/Convertido-iceland.jpg"
+            alt="iceland"
+          />
+
+          <div class="relative left-[16px] bottom-[328px] p-4 w-[90%] bg-gray-500 rounded-[20px] md:bottom-[128px] md:w-2/4">
+            <h3 class="text--title">iceland</h3>
+            <p class="text--normal">comida sorprendente.</p>
+          </div>
+        </article>
+
+        <div class="md:grid md:grid-cols-2 md:grid-rows-2 md:justify-center md:gap-4 md:w-[97vw] lg:w-full">
+          <article class="h-[60vh] w-[78vw] rounded-[20px] mb-4 md:mb-0 md:h-full md:w-auto md:row-span-2  ">
+            <img
+              class="w-full object-cover rounded-[20px] opacity-80 md:h-full "
+              src="./assets/Convertido-iceland.jpg"
+              alt="iceland"
+            />
+
+            <div class="relative left-[16px] bottom-[328px] p-4 w-[90%] bg-gray-500 rounded-[20px] md:bottom-[580px]">
+              <h3 class="text--title">iceland</h3>
+              <p class="text--normal">comida sorprendente.</p>
+            </div>
+          </article>
+
+          <article class="h-[60vh] w-[78vw] rounded-[20px] mb-4 md:mb-0 md:w-auto md:h-full md:max-h-[440px] md:min-h-[220px] md:row-span-1  ">
+            <img
+              class="w-full object-cover rounded-[20px] opacity-80  md:w-full  md:h-full"
+              src="./assets/Convertido-iceland.jpg"
+              alt="iceland"
+            />
+
+            <div class="relative left-[16px] bottom-[328px] p-4 w-[90%] bg-gray-500 rounded-[20px] md:bottom-[128px]">
+              <h3 class="text--title">iceland</h3>
+              <p class="text--normal">comida sorprendente.</p>
+            </div>
+          </article>
+
+          <article class="h-[60vh] w-[78vw] rounded-[20px] mb-4 md:mb-0 md:w-auto md:h-full md:max-h-[440px] md:min-h-[220px]  md:row-span-1">
+            <img
+              class="w-full object-cover rounded-[20px] opacity-80 md:w-full md:h-full"
+              src="./assets/Convertido-iceland.jpg"
+              alt="iceland"
+            />
+
+            <div class="relative left-[16px] bottom-[328px] p-4 w-[90%] bg-gray-500 rounded-[20px] md:bottom-[128px]">
+              <h3 class="text--title">iceland</h3>
+              <p class="text--normal">comida sorprendente.</p>
+            </div>
+          </article>
+        </div>
+        
+      </section>
+      <section id="faqs">
+        <h2 class="mx-[2vh] text-primary text-3xl font-bold pt-[6vh] dark:text-white">FAQs</h2>
+
+        <div class="px-4">
+          <article>
+            <h3 class="font-medium text-xl text-primary pt-4 dark:text-white">
+              Política de Cancelación
+            </h3>
+            <p class="font-medium pt-2 dark:text-white">
+              Para estancias menores a una semana es importante avisar con 3
+              días de anticipación, de caso contario será sancionado.
+            </p>
+          </article>
+
+          <article>
+            <h3 class="font-medium text-xl text-primary pt-4 dark:text-white">
+              Métodos de pago
+            </h3>
+            <p class="font-medium pt-2 dark:text-white">
+              Aceptamos distintos métodos de pago: VISA, MasterCard, American
+              Express, Paypal y Binance
+            </p>
+          </article>
+
+          <article>
+            <h3 class="font-medium text-xl text-primary pt-4 dark:text-white">Mascotas</h3>
+            <p class="font-medium pt-2 dark:text-white">
+              El tema de las mascotas dependerá directamente del anfitrión.
+            </p>
+          </article>
+
+          <article>
+            <h3 class="font-medium text-xl text-primary pt-4 dark:text-white">
+              Información de Seguridad
+            </h3>
+            <p class="font-medium pt-2 dark:text-white">
+              Todas nuestras estancias cuentan con seguro en caso de accidentes
+            </p>
+          </article>
+
+          <article>
+            <h3 class="font-medium text-xl text-primary pt-4 dark:text-white">
+              Estancias Largas
+            </h3>
+            <p class="font-medium pt-2 dark:text-white">
+              Contamos con estancias de hasta 3 meses, en este caso es requerido
+              un anticipo con un monto del 50% del valor de la renta
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="about" class="px-4 pt-4 pb-16 mt-3 bg-primary">
+      <ul class="list-none">
+        <li class="text-white font-normal pb-2">Acerca de</li>
+        <li class="text-white font-normal pb-2">Inversionista.</li>
+        <li class="text-white font-normal pb-2">Empleos</li>
+        <li class="text-white font-normal pb-2">Términos y Condiciones</li>
+        <li class="text-white font-normal pb-2">Platzi Travel, Inc.</li>
+      </ul>
+    </footer>
+
+    <div
+      id="tabBar"
+      class="h-[50px] w-full px-4 py-2 fixed bottom-0 z-999 bg-tertiary flex flex-row items-center justify-center justify-items-center gap-8 md:hidden"
+    >
+      <a href="#home">
+        <img src="./assets/home.svg" alt="home" />
+      </a>
+      <a href="#">
+        <img src="./assets/search.svg" alt="search" />
+      </a>
+      <a href="#rentas-recomendadas">
+        <img src="./assets/corazon.svg" alt="corazon" />
+      </a>
+      <a href="#faqs"></a>
+      <button id="darkmode--sm" class="m-0 p-0 box-border ">
+        <img src="./assets/moon.svg" alt="moon" />
+      </button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -175,4 +175,10 @@ dist
 .history
 .ionide
 
+
+## imagenes originales.
+.assets/originales
+
+
+
 # End of https://www.toptal.com/developers/gitignore/api/git,visualstudiocode,node
